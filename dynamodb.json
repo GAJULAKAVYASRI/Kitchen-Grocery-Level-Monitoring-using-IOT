@@ -12,7 +12,6 @@ def lambda_handler(event, context):
     M = ["maxlength1","maxlength2","maxlength3"]
     
     for i in range(len(D)):
-        
         if (int(event[D[i]])>int(event[M[i]])):
             s[i] = "Box open"
             p[i] = 0
